@@ -27,4 +27,5 @@ group :test do
   gem 'rspec-rails'
   gem "mocha"
   gem 'webmock'
+  gem 'rake'
 end

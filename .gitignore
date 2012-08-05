@@ -16,5 +16,7 @@ rerun.txt
 pickle-email-*.html
 /test/*
 config/accounts.yml
-
+/config/database.yml
 config/pivotal_projects.yml
+
+.DS_Store
