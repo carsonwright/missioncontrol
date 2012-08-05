@@ -20,3 +20,5 @@ config/accounts.yml
 config/pivotal_projects.yml
 
 .DS_Store
+
+config/database.yml
