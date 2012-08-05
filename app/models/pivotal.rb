@@ -1,5 +1,4 @@
 class Pivotal
-  ACCOUNTS = YAML.load(File.open("#{Rails.root}/config/accounts.yml", "r"))
   PROJECTS = YAML.load(File.open("#{Rails.root}/config/pivotal_projects.yml", "r"))
 
   # connect
@@ -7,8 +6,7 @@ class Pivotal
   # @author Jason Truluck
   def self.connect
     PivotalTracker::Client.use_ssl = true
-    PivotalTracker::Client.token(ACCOUNTS['pivotal_tracker']['email'],
-                                 ACCOUNTS['pivotal_tracker']['password'])
+    PivotalTracker::Client.token = Account.find_by_account_type("pivotal").token
   end
   # activity_feed
   # returns the activity feed for all projects

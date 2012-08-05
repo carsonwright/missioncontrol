@@ -1,10 +1,11 @@
 require 'spec_helper'
 
 describe Pivotal do
+  let!(:pivotal) { create(:pivotal) }
+
   describe "#connect" do
     it "should connect to Pivotal Tracker with the account information in the accounts file" do
-      actual_token = PivotalTracker::Client.token("missioncontrol@woofound.com", "DErBsSOcewgmb41Kn1ObP2mCUyQlWauEabdQe9sj2wOh35vTF1bqnWVR5UozwPB")
-
+      actual_token = pivotal.token
       token = Pivotal.connect
 
       token.should == actual_token
