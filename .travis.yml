@@ -1,5 +1,6 @@
 before_script:
   - mysql -e 'create database missioncontrol_test;'
+  - rake db:migrate
 language: ruby
 rvm:
   - 1.9.3
