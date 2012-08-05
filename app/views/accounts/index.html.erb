@@ -1,0 +1,18 @@
+
+<table>
+  <tr>
+    <th>Account Type</th>
+    <th>Token</th>
+  </tr>
+  <% for account in @accounts %>
+    <tr>
+      <td><%= account.account_type %></td>
+      <td><%= account.token %></td>
+      <td><%= link_to "Show", account %></td>
+      <td><%= link_to "Edit", edit_account_path(account) %></td>
+      <td><%= link_to "Destroy", account, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Account", new_account_path %></p>

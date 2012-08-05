@@ -1,0 +1,15 @@
+
+<p>
+  <strong>Account Type:</strong>
+  <%= @account.account_type %>
+</p>
+<p>
+  <strong>Token:</strong>
+  <%= @account.token %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_account_path(@account) %> |
+  <%= link_to "Destroy", @account, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", accounts_path %>
+</p>

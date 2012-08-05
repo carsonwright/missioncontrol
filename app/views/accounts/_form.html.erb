@@ -1,0 +1,12 @@
+<%= form_for @account do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :account_type %><br />
+    <%= f.text_field :account_type %>
+  </p>
+  <p>
+    <%= f.label :token %><br />
+    <%= f.text_field :token %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
