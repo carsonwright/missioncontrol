@@ -67,7 +67,7 @@ GEM
     factory_girl_rails (4.0.0)
       factory_girl (~> 4.0.0)
       railties (>= 3.0.0)
-    ffi (1.1.4)
+    ffi (1.11.1)
     gherkin (2.11.1)
       json (>= 1.4.6)
     google_calendar (0.2.2)
@@ -99,12 +99,9 @@ GEM
     nokogiri (1.5.5)
     pivotal-tracker (0.5.4)
       builder
-      builder
-      happymapper (>= 0.3.2)
       happymapper (>= 0.3.2)
       nokogiri (>= 1.4.3)
       nokogiri (~> 1.4)
-      rest-client (~> 1.6.0)
       rest-client (~> 1.6.0)
     polyglot (0.3.3)
     rack (1.4.1)
