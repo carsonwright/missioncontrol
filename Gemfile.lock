@@ -99,12 +99,9 @@ GEM
     nokogiri (1.5.5)
     pivotal-tracker (0.5.4)
       builder
-      builder
-      happymapper (>= 0.3.2)
       happymapper (>= 0.3.2)
       nokogiri (>= 1.4.3)
       nokogiri (~> 1.4)
-      rest-client (~> 1.6.0)
       rest-client (~> 1.6.0)
     polyglot (0.3.3)
     rack (1.4.1)
@@ -147,7 +144,7 @@ GEM
       activesupport (>= 3.0)
       railties (>= 3.0)
       rspec (~> 2.11.0)
-    rubyzip (0.9.9)
+    rubyzip (2.0.0)
     sass (3.1.20)
     sass-rails (3.2.5)
       railties (~> 3.2.0)
