@@ -99,12 +99,9 @@ GEM
     nokogiri (1.5.5)
     pivotal-tracker (0.5.4)
       builder
-      builder
-      happymapper (>= 0.3.2)
       happymapper (>= 0.3.2)
       nokogiri (>= 1.4.3)
       nokogiri (~> 1.4)
-      rest-client (~> 1.6.0)
       rest-client (~> 1.6.0)
     polyglot (0.3.3)
     rack (1.4.1)
@@ -173,7 +170,7 @@ GEM
     treetop (1.4.10)
       polyglot
       polyglot (>= 0.3.1)
-    tzinfo (0.3.33)
+    tzinfo (0.3.61)
     uglifier (1.2.7)
       execjs (>= 0.3.0)
       multi_json (~> 1.3)
